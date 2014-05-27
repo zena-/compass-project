@@ -1,0 +1,38 @@
+
+// LAYOUT STYLES
+
+$legacy-support-for-ie: false;
+$legacy-support-for-mozilla: false;
+
+.main-header {
+	@include clearfix;
+}
+
+.main-logo {
+	@media (min-width: 769px) {
+		@include float-left;
+	}
+}
+.main-nav {
+	@media (min-width: 769px) {
+		@include inline-block-list(10px);
+		@include float-right;
+	}
+}
+
+// sticky footer
+
+@include sticky-footer(120px, ".container", ".root-footer", ".main-footer");
+
+//multi-column layout
+
+.main-content {
+	@media (min-width: 769px) {
+		@include column-count(3);
+		@include column-gap(3em);
+		@include column-rule(1px sold #ccc);
+		h2, h3 {
+			@include column-span(all);
+		}
+	}
+}

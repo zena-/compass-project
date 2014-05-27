@@ -1,0 +1,31 @@
+
+//PAGE STYLES
+
+//box-sizing
+*{
+	@include box-sizing(border-box);
+}
+
+//gradients
+body {
+	$experimental-support-for-svg: true;
+	@include background(radial-gradient(top, #3d69b5,#1a335e));
+}
+
+//transforms
+$experimental-support-for-opera: false;
+$default-transition-duration: 2s;
+$default-transition-function: ease-out;
+$default-transition-delay: 1s;
+
+.box {
+	width: 250px;
+	height: 250px;
+	background: white;
+		
+	@include transform(translateX(100px) rotate(45deg));
+	@include single-transition;
+}
+.box:hover {
+	@include translateX(400px);
+}
