@@ -2,73 +2,64 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
+/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
 }
 
-/* line 10, ../sass/_reset.scss */
-body,
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  border: 0;
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
-/* line 13, ../sass/_reset.scss */
+/* line 7, ../sass/_type.scss */
 body {
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+  font-family: sans-serif;
 }
 
-/* line 52, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary div, .secondary span, .secondary applet, .secondary object, .secondary iframe,
-.secondary h1, .secondary h2, .secondary h3, .secondary h4, .secondary h5, .secondary h6, .secondary p, .secondary blockquote, .secondary pre,
-.secondary a, .secondary abbr, .secondary acronym, .secondary address, .secondary big, .secondary cite, .secondary code,
-.secondary del, .secondary dfn, .secondary em, .secondary img, .secondary ins, .secondary kbd, .secondary q, .secondary s, .secondary samp,
-.secondary small, .secondary strike, .secondary strong, .secondary sub, .secondary sup, .secondary tt, .secondary var,
-.secondary b, .secondary u, .secondary i, .secondary center,
-.secondary dl, .secondary dt, .secondary dd, .secondary ol, .secondary ul, .secondary li,
-.secondary fieldset, .secondary form, .secondary label, .secondary legend,
-.secondary table, .secondary caption, .secondary tbody, .secondary tfoot, .secondary thead, .secondary tr, .secondary th, .secondary td,
-.secondary article, .secondary aside, .secondary canvas, .secondary details, .secondary embed,
-.secondary figure, .secondary figcaption, .secondary footer, .secondary header, .secondary hgroup,
-.secondary menu, .secondary nav, .secondary output, .secondary ruby, .secondary section, .secondary summary,
-.secondary time, .secondary mark, .secondary audio, .secondary video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/* line 12, ../sass/_type.scss */
+h1 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+  margin-bottom: 0.66667em;
 }
-/* line 55, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+/* line 16, ../sass/_type.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1em;
 }
-/* line 57, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary caption, .secondary th, .secondary td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+
+/* line 20, ../sass/_type.scss */
+h3 {
+  font-size: 1.3125em;
+  line-height: 2.28571em;
 }
-/* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary q, .secondary blockquote {
-  quotes: none;
+
+/* line 23, ../sass/_type.scss */
+p {
+  margin-bottom: 1.5em;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary q:before, .secondary q:after, .secondary blockquote:before, .secondary blockquote:after {
-  content: "";
-  content: none;
+
+/* line 31, ../sass/_type.scss */
+.main-content a {
+  color: #3f8abf;
+  text-decoration: none;
 }
-/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-.secondary a img {
-  border: none;
+/* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:visited {
+  color: #3ac162;
+}
+/* line 4, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* line 43, ../sass/_type.scss */
+h1, h2 {
+  color: #346893;
 }
 
 /* line 5, ../sass/_page.scss */
@@ -187,12 +178,5 @@ html, body {
     -moz-column-rule: 1px sold #cccccc;
     -ms-column-rule: 1px sold #cccccc;
     column-rule: 1px sold #cccccc;
-  }
-  /* line 34, ../sass/_layout.scss */
-  .main-content h2, .main-content h3 {
-    -webkit-column-span: all;
-    -moz-column-span: all;
-    -ms-column-span: all;
-    column-span: all;
   }
 }

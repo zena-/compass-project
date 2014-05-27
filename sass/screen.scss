@@ -8,8 +8,10 @@
 @import "compass/css3";
 @import "compass/layout";
 @import "compass/utilities";
+@import "compass/typography";
 
 // partials
-@import "reset";
+//@import "reset";
+@import "type";
 @import "page";
 @import "layout";

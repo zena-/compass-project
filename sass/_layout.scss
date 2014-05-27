@@ -31,8 +31,6 @@ $legacy-support-for-mozilla: false;
 		@include column-count(3);
 		@include column-gap(3em);
 		@include column-rule(1px sold #ccc);
-		h2, h3 {
-			@include column-span(all);
-		}
+		
 	}
 }
